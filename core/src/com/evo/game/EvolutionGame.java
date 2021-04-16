@@ -17,7 +17,6 @@ public class EvolutionGame extends ApplicationAdapter {
 	
 	@Override
 	public void create () {
-		Gdx.graphics.setDisplayMode(1280, 720, true);
 		batch = new SpriteBatch();
 		game = new Stage();
 		menu = new Stage();
@@ -27,7 +26,7 @@ public class EvolutionGame extends ApplicationAdapter {
 
 	@Override
 	public void render () {
-		Gdx.gl.glClearColor(1, 0, 0, 1);
+		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		batch.begin();
 		if (scene.equals("menu")){
