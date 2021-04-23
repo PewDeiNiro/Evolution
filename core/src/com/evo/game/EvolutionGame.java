@@ -7,13 +7,15 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 
 
 public class EvolutionGame extends ApplicationAdapter {
 
 	SpriteBatch batch;
-	Stage game, menu, pause;
+	Stage game, menu, pause, mine1, mine2, mine3;
 	String scene = "menu";
+	//ImageButton startGameButton, continueGameButton, exitGameButton, continuePauseButton, exitPauseButton;
 	
 	@Override
 	public void create () {
@@ -21,6 +23,9 @@ public class EvolutionGame extends ApplicationAdapter {
 		game = new Stage();
 		menu = new Stage();
 		pause = new Stage();
+		mine1 = new Stage();
+		mine2 = new Stage();
+		mine3 = new Stage();
 		Gdx.input.setInputProcessor(menu);
 	}
 

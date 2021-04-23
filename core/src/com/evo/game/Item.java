@@ -16,6 +16,7 @@ public class Item{
         this.isEmpty = isEmpty;
     }
 
+
     public void act(float delta){
 
     }
